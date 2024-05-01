@@ -5,7 +5,7 @@ Method for isolating QR-code from image:
 - Highlight edges (sobel filter)
 - Highlight large patches of white pixels(mean filter)
 - Create binary image, remove non-white pixels (threshold filter)
-- Dialite/expand image to fill holes
+- Dilate/expand image to fill holes(dilation filter)
 - erosion filter to shrink edges of remaining "shapes"
 - On processed image run Connected components algorithm
 - pyplot to display final result
